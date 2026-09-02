@@ -42,33 +42,60 @@
      Presentación principal del portafolio
      ========================================= -->
 
-      <main>
-        <section class="hero">
-          <!-- Contenido textual del Hero -->
+      <section class="hero">
+        <!-- Fondo decorativo animado -->
+        <div class="hero__background"></div>
+        
+        <!-- Contenedor de dos columnas -->
+        <div class="hero__container">
+          <!-- Columna izquierda - Contenido -->
           <div class="hero__content">
-            <!-- Pequeña introducción -->
+            <!-- Saludo -->
             <p class="hero__greeting">Hola, soy Mattiel 👋</p>
 
-            <!-- Título principal -->
-            <h1 class="hero__title">Frontend Developer</h1>
+            <!-- Título principal con gradiente -->
+            <h1 class="hero__title">
+              <span class="hero__title-highlight">Frontend Developer</span>
+            </h1>
 
-            <!-- Descripción -->
+            <!-- Descripción mejorada -->
             <p class="hero__description">
-              Creo interfaces web modernas, funcionales y atractivas.
+              Creo interfaces web modernas, funcionales y atractivas. Especializado en React, JavaScript y diseño responsivo.
             </p>
+
+            <!-- Tecnologías destacadas -->
+            <div class="hero__technologies">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>CSS3</span>
+              <span>UI/UX</span>
+            </div>
 
             <!-- Botones principales -->
             <div class="hero__actions">
               <a href="/projects/" class="button button--primary">
-                Ver proyectos
+                Ver mis proyectos
               </a>
 
               <a href="/aboutme/" class="button button--secondary">
-                Sobre mí
+                Conocerme más
               </a>
             </div>
           </div>
-        </section>
+          
+          <!-- Columna derecha - Imagen -->
+          <div class="hero__image-section">
+            <div class="hero__image-wrapper">
+              <img src="/images/hero-image.jpg" alt="Mattiel - Frontend Developer" class="hero__image">
+              <!-- Forma decorativa -->
+              <div class="hero__image-decoration"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Elemento decorativo flotante -->
+        <div class="hero__decoration"></div>
+      </section>
 
         <!-- =========================================
      PROJECTS PREVIEW
@@ -97,6 +124,9 @@
                   src="/images/project-1.jpg"
                   alt="Vista previa del proyecto 1"
                 />
+                <div class="project-card__overlay">
+                  <h3 class="project-card__overlay-text">Proyecto 1</h3>
+                </div>
               </div>
 
               <div class="project-card__content">
@@ -117,6 +147,9 @@
                   src="/images/project-2.jpg"
                   alt="Vista previa del proyecto 2"
                 />
+                <div class="project-card__overlay">
+                  <h3 class="project-card__overlay-text">Proyecto 2</h3>
+                </div>
               </div>
 
               <div class="project-card__content">
@@ -137,6 +170,9 @@
                   src="/images/project-3.jpg"
                   alt="Vista previa del proyecto 3"
                 />
+                <div class="project-card__overlay">
+                  <h3 class="project-card__overlay-text">Proyecto 3</h3>
+                </div>
               </div>
 
               <div class="project-card__content">
@@ -157,6 +193,9 @@
                   src="/images/project-4.jpg"
                   alt="Vista previa del proyecto 4"
                 />
+                <div class="project-card__overlay">
+                  <h3 class="project-card__overlay-text">Proyecto 4</h3>
+                </div>
               </div>
 
               <div class="project-card__content">
@@ -178,7 +217,209 @@
             </a>
           </div>
         </section>
+
+        <!-- =========================================
+     TECNOLOGÍAS
+     Carrusel automático de tecnologías
+     ========================================= -->
+
+        <section class="technologies">
+          <!-- Encabezado de la sección -->
+          <div class="section-heading">
+            <p class="section-heading__label">Stack Tecnológico</p>
+
+            <h2 class="section-heading__title">Tecnologías</h2>
+
+            <p class="section-heading__description">
+              Stack tecnológico con el que trabajo para crear soluciones innovadoras
+            </p>
+          </div>
+
+          <!-- Carrusel de tecnologías -->
+          <div class="technologies__carousel">
+            <div class="technologies__track">
+              <!-- Tarjeta 1 -->
+              <div class="tech-card">
+                <div class="tech-card__logo">
+                  <!-- Aquí va el logo: <img src="/images/logo-1.svg" alt="Tecnología 1"> -->
+                </div>
+                <p class="tech-card__name">JavaScript</p>
+              </div>
+
+              <!-- Tarjeta 2 -->
+              <div class="tech-card">
+                <div class="tech-card__logo">
+                  <!-- Aquí va el logo: <img src="/images/logo-2.svg" alt="Tecnología 2"> -->
+                </div>
+                <p class="tech-card__name">TypeScript</p>
+              </div>
+
+              <!-- Tarjeta 3 -->
+              <div class="tech-card">
+                <div class="tech-card__logo">
+                  <!-- Aquí va el logo: <img src="/images/logo-3.svg" alt="Tecnología 3"> -->
+                </div>
+                <p class="tech-card__name">React</p>
+              </div>
+
+              <!-- Tarjeta 4 -->
+              <div class="tech-card">
+                <div class="tech-card__logo">
+                  <!-- Aquí va el logo: <img src="/images/logo-4.svg" alt="Tecnología 4"> -->
+                </div>
+                <p class="tech-card__name">CSS3</p>
+              </div>
+
+              <!-- Tarjeta 5 -->
+              <div class="tech-card">
+                <div class="tech-card__logo">
+                  <!-- Aquí va el logo: <img src="/images/logo-5.svg" alt="Tecnología 5"> -->
+                </div>
+                <p class="tech-card__name">Git</p>
+              </div>
+
+              <!-- Tarjeta 6 -->
+              <div class="tech-card">
+                <div class="tech-card__logo">
+                  <!-- Aquí va el logo: <img src="/images/logo-6.svg" alt="Tecnología 6"> -->
+                </div>
+                <p class="tech-card__name">Docker</p>
+              </div>
+
+              <!-- Tarjeta 7 -->
+              <div class="tech-card">
+                <div class="tech-card__logo">
+                  <!-- Aquí va el logo: <img src="/images/logo-7.svg" alt="Tecnología 7"> -->
+                </div>
+                <p class="tech-card__name">Jest</p>
+              </div>
+
+              <!-- Tarjeta 8 -->
+              <div class="tech-card">
+                <div class="tech-card__logo">
+                  <!-- Aquí va el logo: <img src="/images/logo-8.svg" alt="Tecnología 8"> -->
+                </div>
+                <p class="tech-card__name">Sass</p>
+              </div>
+
+              <!-- Duplicamos las tarjetas para efecto infinito -->
+              <div class="tech-card">
+                <div class="tech-card__logo">
+                  <!-- Aquí va el logo: <img src="/images/logo-1.svg" alt="Tecnología 1"> -->
+                </div>
+                <p class="tech-card__name">JavaScript</p>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-card__logo">
+                  <!-- Aquí va el logo: <img src="/images/logo-2.svg" alt="Tecnología 2"> -->
+                </div>
+                <p class="tech-card__name">TypeScript</p>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-card__logo">
+                  <!-- Aquí va el logo: <img src="/images/logo-3.svg" alt="Tecnología 3"> -->
+                </div>
+                <p class="tech-card__name">React</p>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-card__logo">
+                  <!-- Aquí va el logo: <img src="/images/logo-4.svg" alt="Tecnología 4"> -->
+                </div>
+                <p class="tech-card__name">CSS3</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </main>
+
+    <!-- =========================================
+         FOOTER
+         Pie de página con información
+         ========================================= -->
+
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Columna 1: Información personal -->
+        <div class="footer__column">
+          <h3 class="footer__title">Mattiel</h3>
+          <p class="footer__description">
+            Frontend Developer apasionado por crear interfaces web modernas y funcionales. Especializado en React, JavaScript y diseño responsivo.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link">LinkedIn</a>
+            <a href="#" class="footer__social-link">GitHub</a>
+            <a href="#" class="footer__social-link">Twitter</a>
+          </div>
+        </div>
+
+        <!-- Columna 2: Contacto -->
+        <div class="footer__column">
+          <h4 class="footer__heading">Contacto</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="mailto:email@ejemplo.com" class="footer__link">
+                📧 Email
+              </a>
+            </li>
+            <li>
+              <a href="tel:+1234567890" class="footer__link">
+                📱 Teléfono
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">
+                📍 Ubicación
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">
+                💬 Contactar
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Servicios -->
+        <div class="footer__column">
+          <h4 class="footer__heading">Servicios</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">
+                ⚛️ Desarrollo React
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">
+                🎨 Diseño UI/UX
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">
+                📱 Responsive Design
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">
+                ⚡ Optimización
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Línea divisora -->
+      <div class="footer__divider"></div>
+
+      <!-- Copyright -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2024 Mattiel | Frontend Developer. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

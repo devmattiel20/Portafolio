@@ -52,100 +52,279 @@
 
 
     <!-- =========================================
-         ABOUT ME
+         ABOUT ME HERO
          ========================================= -->
 
     <main>
 
-        <section class="about">
+        <section class="about-hero">
+            <div class="about-hero__background"></div>
+            
+            <div class="about-hero__container">
+                <!-- Contenido izquierdo -->
+                <div class="about-hero__content">
+                    <p class="about-hero__label">Sobre mí</p>
+                    
+                    <h1 class="about-hero__title">
+                        Conoce un poco sobre mí
+                    </h1>
 
-            <div class="about__content">
-
-                <!-- Pequeña etiqueta -->
-                <p class="about__label">
-                    About Me
-                </p>
-
-
-                <!-- Título -->
-                <h1 class="about__title">
-                    Conoce un poco sobre mí.
-                </h1>
-
-
-                <!-- Información -->
-                <div class="about__text">
-
-                    <p>
-                        Soy Mattiel, desarrollador frontend
-                        enfocado en crear interfaces web
-                        modernas, funcionales y fáciles de usar.
+                    <p class="about-hero__description">
+                        Soy Mattiel, desarrollador frontend apasionado por crear interfaces web modernas, funcionales y fáciles de usar. Me gusta aprender construyendo proyectos reales y experimentar con nuevas tecnologías.
                     </p>
 
-                    <p>
-                        Me gusta aprender construyendo proyectos
-                        reales y experimentar con nuevas
-                        tecnologías para mejorar mis habilidades.
-                    </p>
-
-                    <p>
-                        Actualmente estoy enfocado en fortalecer
-                        mis conocimientos de desarrollo web y
-                        seguir creciendo como desarrollador.
-                    </p>
-
+                    <div class="about-hero__cta">
+                        <a href="#" class="button button--primary">
+                            Descargar CV
+                        </a>
+                        <a href="#" class="button button--secondary">
+                            Contáctame
+                        </a>
+                    </div>
                 </div>
 
+                <!-- Stats/Detalles -->
+                <div class="about-hero__stats">
+                    <div class="stat-card">
+                        <div class="stat-card__number">+5</div>
+                        <div class="stat-card__label">Proyectos Completados</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-card__number">2+</div>
+                        <div class="stat-card__label">Años de Experiencia</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-card__number">10+</div>
+                        <div class="stat-card__label">Tecnologías</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+             EXPERIENCIA - Timeline
+             ========================================= -->
+
+        <section class="experience">
+            <div class="section-heading">
+                <p class="section-heading__label">Experiencia</p>
+                <h2 class="section-heading__title">Mi Trayectoria</h2>
             </div>
 
+            <div class="timeline">
+                <!-- Timeline item 1 -->
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    
+                    <div class="timeline__content">
+                        <div class="timeline__date">
+                            Abr 2023 - Jun 2025
+                        </div>
 
-            <!-- Información adicional -->
+                        <h3 class="timeline__title">Desarrollador Frontend</h3>
 
-            <div class="about__details">
+                        <p class="timeline__company">@ Wigilabs</p>
 
-                <div class="about__detail">
+                        <p class="timeline__description">
+                            Encargado del desarrollo de interfaces modernas y responsivas totalmente funcionales. Extrayendo y modificando información de los usuarios a través del consumo de endpoints. Trabajando bajo metodologías scrum.
+                        </p>
 
-                    <span class="about__detail-label">
-                        Enfoque
-                    </span>
-
-                    <span class="about__detail-value">
-                        Frontend Development
-                    </span>
-
+                        <div class="timeline__tags">
+                            <span class="timeline__tag">React</span>
+                            <span class="timeline__tag">JavaScript</span>
+                            <span class="timeline__tag">API REST</span>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Timeline item 2 -->
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    
+                    <div class="timeline__content">
+                        <div class="timeline__date">
+                            Ene 2025 - Abr 2025
+                        </div>
 
-                <div class="about__detail">
+                        <h3 class="timeline__title">Desarrollador Fullstack</h3>
 
-                    <span class="about__detail-label">
-                        Tecnologías
-                    </span>
+                        <p class="timeline__company">@ Autónomo</p>
 
-                    <span class="about__detail-value">
-                        HTML · CSS · JavaScript
-                    </span>
+                        <p class="timeline__description">
+                            Diseño y desarrollo de una aplicación web para la gestión de productos, ventas, usuarios con roles, reportes y gastos. Utilizando React y Bootstrap para el frontend, Python con Flask y MongoDB para el backend.
+                        </p>
 
+                        <div class="timeline__tags">
+                            <span class="timeline__tag">React</span>
+                            <span class="timeline__tag">Python</span>
+                            <span class="timeline__tag">MongoDB</span>
+                            <span class="timeline__tag">Bootstrap</span>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Timeline item 3 -->
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    
+                    <div class="timeline__content">
+                        <div class="timeline__date">
+                            Jun 2024 - Dic 2024
+                        </div>
 
-                <div class="about__detail">
+                        <h3 class="timeline__title">Estudiante de Desarrollo Web</h3>
 
-                    <span class="about__detail-label">
-                        Actualmente aprendiendo
-                    </span>
+                        <p class="timeline__company">@ CoderHouse / Platzi</p>
 
-                    <span class="about__detail-value">
-                        React
-                    </span>
+                        <p class="timeline__description">
+                            Formación en desarrollo web frontend y backend. Completando cursos de HTML, CSS, JavaScript, React, Python y bases de datos. Realizando proyectos prácticos para consolidar conocimientos.
+                        </p>
 
+                        <div class="timeline__tags">
+                            <span class="timeline__tag">HTML</span>
+                            <span class="timeline__tag">CSS</span>
+                            <span class="timeline__tag">JavaScript</span>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
 
+        <!-- =========================================
+             SKILLS
+             ========================================= -->
+
+        <section class="skills-section">
+            <div class="section-heading">
+                <p class="section-heading__label">Habilidades</p>
+                <h2 class="section-heading__title">Skills</h2>
             </div>
 
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Frontend</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">Bootstrap</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Backend</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Flask</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">GitHub</span>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Figma</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Columna 1: Información personal -->
+            <div class="footer__column">
+                <h3 class="footer__title">Mattiel</h3>
+                <p class="footer__description">
+                    Frontend Developer apasionado por crear interfaces web modernas y funcionales. Especializado en React, JavaScript y diseño responsivo.
+                </p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">LinkedIn</a>
+                    <a href="#" class="footer__social-link">GitHub</a>
+                    <a href="#" class="footer__social-link">Twitter</a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Contacto -->
+            <div class="footer__column">
+                <h4 class="footer__heading">Contacto</h4>
+                <ul class="footer__links">
+                    <li>
+                        <a href="mailto:email@ejemplo.com" class="footer__link">
+                            📧 Email
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+1234567890" class="footer__link">
+                            📱 Teléfono
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            📍 Ubicación
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            💬 Contactar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Servicios -->
+            <div class="footer__column">
+                <h4 class="footer__heading">Servicios</h4>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">
+                            ⚛️ Desarrollo React
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            🎨 Diseño UI/UX
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            📱 Responsive Design
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            ⚡ Optimización
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Línea divisora -->
+        <div class="footer__divider"></div>
+
+        <!-- Copyright -->
+        <div class="footer__bottom">
+            <p class="footer__copyright">
+                &copy; 2024 Mattiel | Frontend Developer. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
 
 </body>
 
