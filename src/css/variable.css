@@ -1,0 +1,31 @@
+/* =====================================================
+   VARIABLES GLOBALES
+   Valores que podremos reutilizar en todo el proyecto
+   ===================================================== */
+
+:root {
+
+    /* ---------- Colores ---------- */
+
+    --color-background: #0f0f0f;
+    --color-surface: #181818;
+    --color-text: #ffffff;
+    --color-text-muted: #a0a0a0;
+    --color-accent: #7c5cff;
+
+
+    /* ---------- Tipografía ---------- */
+
+    --font-main: Arial, sans-serif;
+
+
+    /* ---------- Bordes ---------- */
+
+    --border-radius: 12px;
+
+
+    /* ---------- Transiciones ---------- */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}

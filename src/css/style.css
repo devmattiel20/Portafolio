@@ -1,0 +1,10 @@
+/* =====================================================
+   ESTILOS PRINCIPALES
+   ===================================================== */
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-main);
+    line-height: 1.5;
+}
