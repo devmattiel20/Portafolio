@@ -1,29 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-
+  <head>
     <!-- Configuración básica -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
 
     <!-- Hace que el diseño sea responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Título que aparecerá en la pestaña -->
     <title>Mattiel | Frontend Developer</title>
 
     <!-- Estilos globales -->
-    <link rel="stylesheet" href="/portfolio-mattiel/src/css/reset.css">
-    <link rel="stylesheet" href="/portfolio-mattiel/src/css/variables.css">
-    <link rel="stylesheet" href="/portfolio-mattiel/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/variable.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+  </head>
+  <body>
+    <!-- =========================================
+         NAVBAR
+         Barra de navegación principal
+         ========================================= -->
 
-</head>
+    <header class="navbar">
+      <!-- Logo / nombre -->
+      <a href="/" class="navbar__logo"> MATTIEL </a>
 
+      <!-- Menú de navegación -->
+      <nav class="navbar__menu">
+        <a href="/" class="navbar__link"> Home </a>
 
-<body>
+        <a href="/projects/" class="navbar__link"> Projects </a>
 
-    <h1>Hola, soy Mattiel 👋</h1>
+        <a href="/aboutme/" class="navbar__link"> About Me </a>
+      </nav>
+    </header>
 
-</body>
+    <!-- Contenido principal -->
+    <main>
+      <!-- =========================================
+     HERO
+     Presentación principal del portafolio
+     ========================================= -->
 
+      <main>
+        <section class="hero">
+          <!-- Contenido textual del Hero -->
+          <div class="hero__content">
+            <!-- Pequeña introducción -->
+            <p class="hero__greeting">Hola, soy Mattiel 👋</p>
+
+            <!-- Título principal -->
+            <h1 class="hero__title">Frontend Developer</h1>
+
+            <!-- Descripción -->
+            <p class="hero__description">
+              Creo interfaces web modernas, funcionales y atractivas.
+            </p>
+
+            <!-- Botones principales -->
+            <div class="hero__actions">
+              <a href="/projects/" class="button button--primary">
+                Ver proyectos
+              </a>
+
+              <a href="/aboutme/" class="button button--secondary">
+                Sobre mí
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========================================
+     PROJECTS PREVIEW
+     Vista resumida de nuestros proyectos
+     ========================================= -->
+
+        <section class="projects-preview">
+          <!-- Encabezado de la sección -->
+          <div class="section-heading">
+            <p class="section-heading__label">Portfolio</p>
+
+            <h2 class="section-heading__title">Mis proyectos</h2>
+
+            <p class="section-heading__description">
+              Algunos de los proyectos que he desarrollado durante mi
+              aprendizaje como frontend developer.
+            </p>
+          </div>
+
+          <!-- Contenedor de las tarjetas -->
+          <div class="projects-grid">
+            <!-- Proyecto 1 -->
+            <a href="/projects/project-1/" class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="/images/project-1.jpg"
+                  alt="Vista previa del proyecto 1"
+                />
+              </div>
+
+              <div class="project-card__content">
+                <p class="project-card__number">01</p>
+
+                <h3 class="project-card__title">Proyecto 1</h3>
+
+                <p class="project-card__description">
+                  Descripción breve del proyecto.
+                </p>
+              </div>
+            </a>
+
+            <!-- Proyecto 2 -->
+            <a href="/projects/project-2/" class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="/images/project-2.jpg"
+                  alt="Vista previa del proyecto 2"
+                />
+              </div>
+
+              <div class="project-card__content">
+                <p class="project-card__number">02</p>
+
+                <h3 class="project-card__title">Proyecto 2</h3>
+
+                <p class="project-card__description">
+                  Descripción breve del proyecto.
+                </p>
+              </div>
+            </a>
+
+            <!-- Proyecto 3 -->
+            <a href="/projects/project-3/" class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="/images/project-3.jpg"
+                  alt="Vista previa del proyecto 3"
+                />
+              </div>
+
+              <div class="project-card__content">
+                <p class="project-card__number">03</p>
+
+                <h3 class="project-card__title">Proyecto 3</h3>
+
+                <p class="project-card__description">
+                  Descripción breve del proyecto.
+                </p>
+              </div>
+            </a>
+
+            <!-- Proyecto 4 -->
+            <a href="/projects/project-4/" class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="/images/project-4.jpg"
+                  alt="Vista previa del proyecto 4"
+                />
+              </div>
+
+              <div class="project-card__content">
+                <p class="project-card__number">04</p>
+
+                <h3 class="project-card__title">Proyecto 4</h3>
+
+                <p class="project-card__description">
+                  Descripción breve del proyecto.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Botón para ver todos -->
+          <div class="projects-preview__action">
+            <a href="/projects/" class="button button--primary">
+              Ver todos los proyectos
+            </a>
+          </div>
+        </section>
+      </main>
+    </main>
+  </body>
 </html>

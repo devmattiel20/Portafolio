@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Configuración básica -->
+    <meta charset="UTF-8" />
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título de la pestaña -->
+    <title>Proyecto 4 | Mattiel</title>
+
+    <!-- CSS global -->
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/variable.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+  </head>
+
+  <body>
+    <!-- =========================================
+         NAVBAR
+         ========================================= -->
+
+    <header class="navbar">
+      <a href="/" class="navbar__logo"> MATTIEL </a>
+
+      <nav class="navbar__menu">
+        <a href="/" class="navbar__link"> Home </a>
+
+        <a href="/projects/" class="navbar__link"> Projects </a>
+
+        <a href="/aboutme/" class="navbar__link"> About Me </a>
+      </nav>
+    </header>
+
+    <!-- =========================================
+         PROJECT DETAIL
+         ========================================= -->
+
+    <main>
+      <article class="project-detail">
+        <!-- ---------- Encabezado ---------- -->
+
+        <header class="project-detail__header">
+          <a href="/projects/" class="project-detail__back">
+            ← Volver a proyectos
+          </a>
+
+          <span class="project-detail__number"> 01 </span>
+
+          <h1 class="project-detail__title" id="project-title">Proyecto 1 F</h1>
+          F
+
+          <p class="project-detail__intro" id="project-intro">
+            Una breve descripción de este proyecto y el objetivo principal que
+            tiene.
+          </p>
+        </header>
+
+        <!-- ---------- Imagen principal ---------- -->
+
+        <div class="project-detail__hero">
+          <img
+            id="project-image"
+            src="/images/project-1.jpg"
+            alt="Vista principal del proyecto 1"
+          />
+        </div>
+
+        <!-- ---------- Información ---------- -->
+
+        <div class="project-detail__body">
+          <section class="project-detail__section">
+            <h2>Sobre el proyecto</h2>
+
+            <p>
+              Aquí colocaremos una descripción más completa del proyecto.
+              Explicaremos qué problema buscaba resolver, cómo fue construido y
+              cuáles fueron las decisiones principales durante su desarrollo.
+            </p>
+          </section>
+
+          <!-- ---------- Tecnologías ---------- -->
+
+          <section class="project-detail__section">
+            <h2>Tecnologías</h2>
+            <div class="project-detail__technologies" id="project-technologies">
+              <!-- JavaScript colocará las tecnologías aquí -->
+            </div>
+          </section>
+
+          <!-- ---------- Acciones ---------- -->
+
+          <section class="project-detail__actions">
+            <a href="#" class="button button--primary" id="project-demo">
+              Ver proyecto
+            </a>
+
+            <a href="#" class="button button--secondary" id="project-github">
+              GitHub
+            </a>
+          </section>
+        </div>
+      </article>
+    </main>
+    <script type="module" src="/src/js/project-details.js"></script>
+  </body>
+</html>
