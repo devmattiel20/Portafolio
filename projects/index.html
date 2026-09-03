@@ -38,29 +38,109 @@
     <!-- =========================================
          PROJECTS
          ========================================= -->
-
-    <main>
-      <section class="projects-page">
-        <!-- Encabezado -->
-
-        <div class="projects-page__heading">
-          <p class="section-heading__label">Portfolio</p>
-
-          <h1 class="projects-page__title">Mis proyectos</h1>
-
-          <p class="projects-page__description">
-            Una selección de proyectos que he construido mientras desarrollo mis
-            habilidades como frontend developer.
+    <!-- =========================================
+         PROJECTS HERO
+         ========================================= -->
+    <section class="projects-hero">
+      <div class="projects-hero__background"></div>
+      
+      <div class="projects-hero__container">
+        <div class="projects-hero__content">
+          <p class="projects-hero__label">Portfolio</p>
+          
+          <h1 class="projects-hero__title">Mis Proyectos</h1>
+          
+          <p class="projects-hero__description">
+            Una colección de proyectos que he construido mientras desarrollo mis 
+            habilidades como Developer. Cada proyecto representa un paso en mi 
+            aprendizaje y crecimiento profesional.
           </p>
         </div>
+      </div>
+    </section>
 
-        <!-- =====================================
-                 PROJECT LIST
-                 ===================================== -->
+    <!-- =========================================
+         PROJECTS GRID
+         ========================================= -->
+    <main class="projects-main">
+      <section class="projects-section">
+        <div class="projects-container">
+          <!-- Filtros -->
+          <div class="projects-filters">
+            <button class="filter-btn filter-btn--active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+            <button class="filter-btn" data-filter="other">Otros</button>
+          </div>
 
+          <!-- Grid de proyectos -->
+          <div class="projects-grid">
+            <!-- JavaScript insertará aquí las tarjetas -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+   
+
+    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/projects.js"></script>
         <div class="projects-list">
           <!-- JavaScript insertará aquí las tarjetas -->
         </div>
+
+
+
+         <!-- =========================================
+         FOOTER
+         ========================================= -->
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Columna 1: Info principal -->
+        <div class="footer__column">
+          <h2 class="footer__title">MATTIEL</h2>
+          <p class="footer__description">
+            Desarrollador Frontend apasionado por crear experiencias web modernas 
+            y funcionales.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link">LinkedIn</a>
+            <a href="#" class="footer__social-link">GitHub</a>
+            <a href="#" class="footer__social-link">Twitter</a>
+          </div>
+        </div>
+
+        <!-- Columna 2: Links -->
+        <div class="footer__column">
+          <h3 class="footer__heading">Contacto</h3>
+          <ul class="footer__links">
+            <li><a href="mailto:contacto@mattiel.com" class="footer__link">Email</a></li>
+            <li><a href="tel:+1234567890" class="footer__link">Teléfono</a></li>
+            <li><a href="#" class="footer__link">Ubicación</a></li>
+            <li><a href="#" class="footer__link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Servicios -->
+        <div class="footer__column">
+          <h3 class="footer__heading">Servicios</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">React Dev</a></li>
+            <li><a href="#" class="footer__link">UI/UX Design</a></li>
+            <li><a href="#" class="footer__link">Responsive Design</a></li>
+            <li><a href="#" class="footer__link">Optimización</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__divider"></div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2025 Mattiel. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
       </section>
     </main>
     <script type="module" src="/src/js/main.js"></script>
