@@ -59,20 +59,7 @@
           </p>
         </header>
 
-        <!-- ---------- Imagen principal ---------- -->
-
-        <div class="project-detail__hero">
-          <img
-            id="project-image"
-            src="/images/project-1.jpg"
-            alt="Vista principal del proyecto 1"
-          />
-        </div>
-
-        <div class="project-detail__gallery" id="project-gallery" aria-label="Imágenes descriptivas del proyecto">
-          <!-- JavaScript colocará aquí las imágenes secundarias -->
-        </div>
-
+        
         <!-- ---------- Información ---------- -->
 
         <div class="project-detail__body">
@@ -116,6 +103,25 @@
           </article>
         </section>
 
+
+
+        <!-- ---------- Imagen principal ---------- -->
+
+        <div class="project-detail__hero">
+          <img
+            id="project-image"
+            src="/images/project-1.jpg"
+            alt="Vista principal del proyecto 1"
+          />
+        </div>
+
+        
+        <div class="project-detail__gallery" id="project-gallery" aria-label="Imágenes descriptivas del proyecto">
+          <!-- JavaScript colocará aquí las imágenes secundarias -->
+        </div>
+
+        
+
         <section class="project-detail__stack" aria-labelledby="project-stack-title">
           <div class="project-detail__stack-heading">
             <span class="project-detail__stack-line" aria-hidden="true"></span>
@@ -128,6 +134,88 @@
         </section>
       </article>
     </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Columna 1: Información personal -->
+            <div class="footer__column">
+                <h3 class="footer__title">Mattiel</h3>
+                <p class="footer__description">
+                    Frontend Developer apasionado por crear interfaces web modernas y funcionales. Especializado en React, JavaScript y diseño responsivo.
+                </p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">LinkedIn</a>
+                    <a href="#" class="footer__social-link">GitHub</a>
+                    <a href="#" class="footer__social-link">Twitter</a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Contacto -->
+            <div class="footer__column">
+                <h4 class="footer__heading">Contacto</h4>
+                <ul class="footer__links">
+                    <li>
+                        <a href="mailto:email@ejemplo.com" class="footer__link">
+                            📧 Email
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+1234567890" class="footer__link">
+                            📱 Teléfono
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            📍 Ubicación
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            💬 Contactar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Servicios -->
+            <div class="footer__column">
+                <h4 class="footer__heading">Servicios</h4>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">
+                            ⚛️ Desarrollo React
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            🎨 Diseño UI/UX
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            📱 Responsive Design
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            ⚡ Optimización
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Línea divisora -->
+        <div class="footer__divider"></div>
+
+        <!-- Copyright -->
+        <div class="footer__bottom">
+            <p class="footer__copyright">
+                &copy; 2024 Mattiel | Frontend Developer. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
     <script type="module" src="/src/js/project-details.js"></script>
   </body>
 </html>

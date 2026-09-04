@@ -2324,7 +2324,7 @@ body {
 
     margin: 0 auto;
 
-    padding: 80px 5% 120px;
+    padding: 48px 5% 96px;
 }
 
 
@@ -2333,7 +2333,7 @@ body {
 .project-detail__header {
     max-width: 800px;
 
-    margin-bottom: 60px;
+    margin-bottom: 32px;
 }
 
 
@@ -2344,7 +2344,7 @@ body {
 
     color: var(--color-text-muted);
 
-    margin-bottom: 50px;
+    margin-bottom: 24px;
 
     transition: color var(--transition-fast);
 }
@@ -2368,34 +2368,32 @@ body {
 
     letter-spacing: 2px;
 
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 
 /* ---------- Título ---------- */
 
 .project-detail__title {
-    font-size: clamp(3rem, 7vw, 6rem);
+    font-size: clamp(2rem, 4vw, 3rem);
 
     line-height: 1;
 
     letter-spacing: -2px;
 
-    margin-bottom: 24px;
+    margin-bottom: 14px;
+}
+
+
+.project-detail__intro {
+    max-width: 650px;
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
 }
 
 
 /* ---------- Introducción ---------- */
-
-.project-detail__intro {
-    max-width: 650px;
-
-    color: var(--color-text-muted);
-
-    font-size: 1.2rem;
-
-    line-height: 1.7;
-}
 
 
 /* =====================================================
@@ -2477,7 +2475,7 @@ body {
 /* ---------- Sections ---------- */
 
 .project-detail__section {
-    padding: 40px 0;
+    padding: 24px 0;
 
     border-top: 1px solid #262626;
 }
@@ -2486,16 +2484,16 @@ body {
 .project-detail__section h2 {
     font-size: 1.5rem;
 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 
 .project-detail__section p {
     color: var(--color-text-muted);
 
-    font-size: 1.05rem;
+    font-size: 1rem;
 
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 
@@ -2530,9 +2528,9 @@ body {
    ===================================================== */
 
 .project-detail__stack {
-    max-width: 1216px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 52px clamp(24px, 5vw, 72px) 58px;
+    padding: 24px clamp(18px, 4vw, 32px) 24px;
     border: 1px solid #303030;
     border-radius: 18px;
     background:
@@ -2545,14 +2543,14 @@ body {
 .project-detail__stack-heading {
     display: flex;
     align-items: center;
-    gap: 14px;
-    margin-bottom: 34px;
+    gap: 10px;
+    margin-bottom: 18px;
 }
 
 
 .project-detail__stack-line {
-    width: 8px;
-    height: 48px;
+    width: 6px;
+    height: 36px;
     border-radius: 8px;
     background: linear-gradient(180deg, #4d9fff, var(--color-accent));
 }
@@ -2560,7 +2558,7 @@ body {
 
 .project-detail__stack-heading h2 {
     margin: 0;
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-size: clamp(1.5rem, 3vw, 2rem);
     background: linear-gradient(90deg, #65a8ff, #c05cff);
     -webkit-background-clip: text;
     background-clip: text;
@@ -2570,19 +2568,19 @@ body {
 
 .project-detail__stack .project-detail__technologies {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
 }
 
 
 .project-detail__technology {
-    min-height: 154px;
+    min-height: 108px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 18px;
-    padding: 20px 14px;
+    gap: 10px;
+    padding: 12px 10px;
     border: 1px solid #3a3a3a;
     border-radius: 14px;
     background: #1d1d1d;
@@ -2600,12 +2598,12 @@ body {
 .project-detail__technology-mark {
     display: grid;
     place-items: center;
-    width: 64px;
-    height: 64px;
-    border-radius: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 9px;
     background: linear-gradient(135deg, #3c8cf5, #7c5cff);
     color: #ffffff;
-    font-size: 1.15rem;
+    font-size: 0.85rem;
     font-weight: 800;
     letter-spacing: 0;
 }
@@ -2615,7 +2613,7 @@ body {
     padding: 0;
     border: 0;
     color: #e7e7e7;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 700;
     text-align: center;
 }
@@ -2630,7 +2628,7 @@ body {
 
     gap: 16px;
 
-    padding-top: 40px;
+    padding-top: 24px;
 }
 
 
@@ -2657,14 +2655,14 @@ body {
 .project-detail__highlights {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-    margin: 64px 0 80px;
+    gap: 18px;
+    margin: 36px 0 48px;
 }
 
 
 .project-detail__highlight {
-    min-height: 146px;
-    padding: 26px 30px;
+    min-height: 126px;
+    padding: 20px 24px;
     border: 1px solid #315f9a;
     border-radius: 16px;
     background: linear-gradient(135deg, rgba(24, 24, 24, 0.96), rgba(15, 15, 15, 0.96));
@@ -2672,19 +2670,23 @@ body {
 
 
 .project-detail__highlight h2 {
-    margin-bottom: 12px;
-    font-size: 1.45rem;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
 }
 
 
 .project-detail__highlight p {
     color: var(--color-text-muted);
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.45;
 }
 
 
 @media (max-width: 800px) {
+    .project-detail__stack .project-detail__technologies {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
     .project-detail__highlights {
         grid-template-columns: 1fr;
         gap: 16px;
@@ -2694,6 +2696,10 @@ body {
 
 
 @media (max-width: 500px) {
+    .project-detail__stack .project-detail__technologies {
+        grid-template-columns: 1fr;
+    }
+
     .project-detail__actions {
         flex-direction: column;
     }

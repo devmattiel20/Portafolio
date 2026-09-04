@@ -14,9 +14,6 @@ const projects = [
 
         title: "Proyecto 1",
 
-        description:
-            "Descripción breve del proyecto.",
-
         image:
             "/images/MattSports.png",
 
@@ -45,9 +42,6 @@ const projects = [
         id: 2,
 
         title: "Proyecto 2",
-
-        description:
-            "Descripción breve del proyecto.",
 
         image:
             "/images/Luveeu.png",
@@ -78,9 +72,6 @@ const projects = [
 
         title: "Proyecto 3",
 
-        description:
-            "Descripción breve del proyecto.",
-
         image:
             "/images/Crediby.png",
 
@@ -109,9 +100,6 @@ const projects = [
         id: 4,
 
         title: "Proyecto 4",
-
-        description:
-            "Descripción breve del proyecto.",
 
         image:
             "/images/Wematt.png",

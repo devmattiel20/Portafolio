@@ -42,86 +42,121 @@
 
     <main>
       <article class="project-detail">
-        <!-- ---------- Encabezado ---------- -->
-
         <header class="project-detail__header">
-          <a href="/projects/" class="project-detail__back">
-            ← Volver a proyectos
-          </a>
-
-          <span class="project-detail__number"> 01 </span>
-
-          <h1 class="project-detail__title" id="project-title">Proyecto 1</h1>
-          
-
-          <p class="project-detail__intro" id="project-intro">
-            Una breve descripción de este proyecto y el objetivo principal que
-            tiene.
-          </p>
+          <a href="/projects/" class="project-detail__back">← Volver a proyectos</a>
+          <span class="project-detail__number">03</span>
+          <h1 class="project-detail__title" id="project-title">Proyecto 3</h1>
+          <p class="project-detail__intro" id="project-intro">Una breve descripción de este proyecto y el objetivo principal que tiene.</p>
         </header>
-
-        <!-- ---------- Imagen principal ---------- -->
-
-        <div class="project-detail__hero">
-          <img
-            id="project-image"
-            src="/images/project-1.jpg"
-            alt="Vista principal del proyecto 1"
-          />
-        </div>
-
-
-        <!-- ---------- Información ---------- -->
 
         <div class="project-detail__body">
           <section class="project-detail__section">
             <h2>Sobre el proyecto</h2>
-
-            <p>
-              Aquí colocaremos una descripción más completa del proyecto.
-              Explicaremos qué problema buscaba resolver, cómo fue construido y
-              cuáles fueron las decisiones principales durante su desarrollo.
-            </p>
+            <p>Aquí colocaremos una descripción más completa del proyecto. Explicaremos qué problema buscaba resolver y cuáles fueron sus decisiones principales.</p>
           </section>
-
-          <!-- ---------- Tecnologías ---------- -->
-
-          <section class="project-detail__section">
-            <h2>Tecnologías</h2>
-            <div class="project-detail__technologies" id="project-technologies">
-              <!-- JavaScript colocará las tecnologías aquí -->
-            </div>
-          </section>
-
-          <!-- ---------- Acciones ---------- -->
-
           <section class="project-detail__actions">
-            <a href="#" class="button button--primary" id="project-demo">
-              Ver proyecto
-            </a>
-
-            <a href="#" class="button button--secondary" id="project-github">
-              Código fuente
-            </a>
+            <a href="#" class="button button--primary" id="project-demo">Ver proyecto</a>
+            <a href="#" class="button button--secondary" id="project-github">Código fuente</a>
           </section>
         </div>
 
         <section class="project-detail__highlights" aria-label="Resumen del proyecto">
-          <article class="project-detail__highlight">
-            <h2>Ventas</h2>
-            <p>Permite gestionar productos y realizar ventas de forma rápida y ordenada.</p>
-          </article>
-          <article class="project-detail__highlight">
-            <h2>Panel</h2>
-            <p>Incluye información relevante para consultar el estado general del proyecto.</p>
-          </article>
-          <article class="project-detail__highlight">
-            <h2>Credenciales</h2>
-            <p>Agrega aquí las credenciales o indicaciones necesarias para probar el proyecto.</p>
-          </article>
+          <article class="project-detail__highlight"><h2>Ventas</h2><p>Permite gestionar productos y realizar ventas de forma rápida y ordenada.</p></article>
+          <article class="project-detail__highlight"><h2>Panel</h2><p>Incluye información relevante para consultar el estado general del proyecto.</p></article>
+          <article class="project-detail__highlight"><h2>Credenciales</h2><p>Agrega aquí las credenciales o indicaciones necesarias para probar el proyecto.</p></article>
+        </section>
+
+        <div class="project-detail__hero"><img id="project-image" src="/images/project-3.jpg" alt="Vista principal del proyecto 3" /></div>
+        <div class="project-detail__gallery" id="project-gallery" aria-label="Imágenes descriptivas del proyecto"></div>
+
+        <section class="project-detail__stack" aria-labelledby="project-stack-title">
+          <div class="project-detail__stack-heading"><span class="project-detail__stack-line" aria-hidden="true"></span><h2 id="project-stack-title">Construido con</h2></div>
+          <div class="project-detail__technologies" id="project-technologies"></div>
         </section>
       </article>
     </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Columna 1: Información personal -->
+            <div class="footer__column">
+                <h3 class="footer__title">Mattiel</h3>
+                <p class="footer__description">
+                    Frontend Developer apasionado por crear interfaces web modernas y funcionales. Especializado en React, JavaScript y diseño responsivo.
+                </p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">LinkedIn</a>
+                    <a href="#" class="footer__social-link">GitHub</a>
+                    <a href="#" class="footer__social-link">Twitter</a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Contacto -->
+            <div class="footer__column">
+                <h4 class="footer__heading">Contacto</h4>
+                <ul class="footer__links">
+                    <li>
+                        <a href="mailto:email@ejemplo.com" class="footer__link">
+                            📧 Email
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+1234567890" class="footer__link">
+                            📱 Teléfono
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            📍 Ubicación
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            💬 Contactar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Servicios -->
+            <div class="footer__column">
+                <h4 class="footer__heading">Servicios</h4>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">
+                            ⚛️ Desarrollo React
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            🎨 Diseño UI/UX
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            📱 Responsive Design
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            ⚡ Optimización
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Línea divisora -->
+        <div class="footer__divider"></div>
+
+        <!-- Copyright -->
+        <div class="footer__bottom">
+            <p class="footer__copyright">
+                &copy; 2024 Mattiel | Frontend Developer. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
     <script type="module" src="/src/js/project-details.js"></script>
   </body>
 </html>
