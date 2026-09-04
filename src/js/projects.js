@@ -18,7 +18,12 @@ const projects = [
             "Descripción breve del proyecto.",
 
         image:
-            "/images/project-1.jpg",
+            "/images/MattSports.png",
+
+        gallery: [
+            "/images/MattSportst.png",
+            "/images/mattSportsi.png"
+        ],
 
         technologies: [
             "HTML",
@@ -45,7 +50,12 @@ const projects = [
             "Descripción breve del proyecto.",
 
         image:
-            "/images/project-2.jpg",
+            "/images/Luveeu.png",
+
+        gallery: [
+            "/images/Luveep.png",
+            "/images/Luvee.png"
+        ],
 
         technologies: [
             "HTML",
@@ -72,7 +82,12 @@ const projects = [
             "Descripción breve del proyecto.",
 
         image:
-            "/images/project-3.jpg",
+            "/images/Crediby.png",
+
+        gallery: [
+            "/images/Experiencia.png",
+            "/images/Hero.jpg"
+        ],
 
         technologies: [
             "HTML",
@@ -99,7 +114,12 @@ const projects = [
             "Descripción breve del proyecto.",
 
         image:
-            "/images/project-4.jpg",
+            "/images/Wematt.png",
+
+        gallery: [
+            "/images/Heroo.jpg",
+            "/images/tecnologias.png"
+        ],
 
         technologies: [
             "HTML",

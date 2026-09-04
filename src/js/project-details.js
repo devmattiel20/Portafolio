@@ -105,6 +105,19 @@ if (project) {
     // También actualizamos el texto alternativo.
     image.alt = `Vista principal de ${project.title}`;
 
+    const gallery = document.querySelector("#project-gallery");
+
+    if (gallery && project.gallery) {
+        project.gallery.forEach((galleryImage, index) => {
+            const galleryItem = document.createElement("figure");
+            galleryItem.className = "project-detail__gallery-item";
+            galleryItem.innerHTML = `
+                <img src="${galleryImage}" alt="${project.title}, vista descriptiva ${index + 1}">
+            `;
+            gallery.appendChild(galleryItem);
+        });
+    }
+
 
     // -------------------------------------------------
     // TECNOLOGÍAS
@@ -117,13 +130,18 @@ if (project) {
     // Recorremos el array de tecnologías.
     project.technologies.forEach((technology) => {
 
-        // Creamos un <span>.
-        const technologyElement =
-            document.createElement("span");
+        const technologyElement = document.createElement("article");
+        technologyElement.className = "project-detail__technology";
+        technologyElement.innerHTML = `
+            <span class="project-detail__technology-mark" aria-hidden="true">
+                ${technology.slice(0, 2).toUpperCase()}
+            </span>
+            <span class="project-detail__technology-name"></span>
+        `;
 
-
-        // Colocamos el nombre de la tecnología.
-        technologyElement.textContent = technology;
+        technologyElement.querySelector(
+            ".project-detail__technology-name"
+        ).textContent = technology;
 
 
         // Añadimos el elemento al contenedor.

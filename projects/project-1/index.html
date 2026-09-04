@@ -9,6 +9,7 @@
 
     <!-- Título de la pestaña -->
     <title>Proyecto 1 | Mattiel</title>
+    <link rel="icon" type="image/svg+xml" href="/images/Logo.png" />
 
     <!-- CSS global -->
     <link rel="stylesheet" href="/src/css/reset.css" />
@@ -22,7 +23,9 @@
          ========================================= -->
 
     <header class="navbar">
-      <a href="/" class="navbar__logo"> MATTIEL </a>
+      <a href="/" class="navbar__logo">
+        <span>MATTIEL</span>
+      </a>
 
       <nav class="navbar__menu">
         <a href="/" class="navbar__link"> Home </a>
@@ -48,8 +51,7 @@
 
           <span class="project-detail__number"> 01 </span>
 
-          <h1 class="project-detail__title" id="project-title">Proyecto 1 F</h1>
-          F
+          <h1 class="project-detail__title" id="project-title">Proyecto 1</h1>
 
           <p class="project-detail__intro" id="project-intro">
             Una breve descripción de este proyecto y el objetivo principal que
@@ -67,6 +69,10 @@
           />
         </div>
 
+        <div class="project-detail__gallery" id="project-gallery" aria-label="Imágenes descriptivas del proyecto">
+          <!-- JavaScript colocará aquí las imágenes secundarias -->
+        </div>
+
         <!-- ---------- Información ---------- -->
 
         <div class="project-detail__body">
@@ -82,13 +88,6 @@
 
           <!-- ---------- Tecnologías ---------- -->
 
-          <section class="project-detail__section">
-            <h2>Tecnologías</h2>
-            <div class="project-detail__technologies" id="project-technologies">
-              <!-- JavaScript colocará las tecnologías aquí -->
-            </div>
-          </section>
-
           <!-- ---------- Acciones ---------- -->
 
           <section class="project-detail__actions">
@@ -97,10 +96,36 @@
             </a>
 
             <a href="#" class="button button--secondary" id="project-github">
-              GitHub
+              Código fuente
             </a>
           </section>
         </div>
+
+        <section class="project-detail__highlights" aria-label="Resumen del proyecto">
+          <article class="project-detail__highlight">
+            <h2>Ventas</h2>
+            <p>Permite gestionar productos y realizar ventas de forma rápida y ordenada.</p>
+          </article>
+          <article class="project-detail__highlight">
+            <h2>Panel</h2>
+            <p>Incluye información relevante para consultar el estado general del proyecto.</p>
+          </article>
+          <article class="project-detail__highlight">
+            <h2>Credenciales</h2>
+            <p>Agrega aquí las credenciales o indicaciones necesarias para probar el proyecto.</p>
+          </article>
+        </section>
+
+        <section class="project-detail__stack" aria-labelledby="project-stack-title">
+          <div class="project-detail__stack-heading">
+            <span class="project-detail__stack-line" aria-hidden="true"></span>
+            <h2 id="project-stack-title">Construido con</h2>
+          </div>
+
+          <div class="project-detail__technologies" id="project-technologies">
+            <!-- JavaScript colocará las tecnologías aquí -->
+          </div>
+        </section>
       </article>
     </main>
     <script type="module" src="/src/js/project-details.js"></script>
