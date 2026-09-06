@@ -29,10 +29,10 @@ const projects = [
         ],
 
         github:
-            "#",
+            "https://github.com/devmattiel20/MattSports",
 
         demo:
-            "#"
+            "https://mattsports.vercel.app/"
     },
 
 
@@ -52,13 +52,15 @@ const projects = [
         ],
 
         technologies: [
-            "HTML",
+            "React",
+            "Tailwind",
             "CSS",
-            "JavaScript"
+            "JavaScript",
+            
         ],
 
         github:
-            "#",
+            "https://github.com/devmattiel20/Luvee",
 
         demo:
             "#"
@@ -81,7 +83,7 @@ const projects = [
         ],
 
         technologies: [
-            "HTML",
+            "React",
             "CSS",
             "JavaScript"
         ],
@@ -110,7 +112,7 @@ const projects = [
         ],
 
         technologies: [
-            "HTML",
+            "React",
             "CSS",
             "JavaScript"
         ],

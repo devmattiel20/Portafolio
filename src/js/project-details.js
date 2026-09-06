@@ -132,9 +132,24 @@ if (project) {
 
         const technologyElement = document.createElement("article");
         technologyElement.className = "project-detail__technology";
+const technologyLogos = {
+    HTML: "/images/HTML.png",
+    CSS: "/images/CSS3.png",
+    JavaScript: "/images/JS.png",
+    React: "/images/react.svg",
+    Tailwind: "/images/Tailwind.webp",
+    Bootstrap: "/images/Bootstrap.webp",
+    Git: "/images/Git.webp",
+    Python: "/images/Python.webp",
+    Node: "/images/node.png"
+};
+        const logo = technologyLogos[technology];
+
         technologyElement.innerHTML = `
             <span class="project-detail__technology-mark" aria-hidden="true">
-                ${technology.slice(0, 2).toUpperCase()}
+                ${logo
+                    ? `<img src="${logo}" alt="" />`
+                    : technology.slice(0, 2).toUpperCase()}
             </span>
             <span class="project-detail__technology-name"></span>
         `;

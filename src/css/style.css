@@ -2530,7 +2530,7 @@ body {
 .project-detail__stack {
     max-width: 100%;
     margin: 0 auto;
-    padding: 24px clamp(18px, 4vw, 32px) 24px;
+    padding: 20px clamp(18px, 4vw, 28px) 22px;
     border: 1px solid #303030;
     border-radius: 18px;
     background:
@@ -2544,7 +2544,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 }
 
 
@@ -2558,7 +2558,7 @@ body {
 
 .project-detail__stack-heading h2 {
     margin: 0;
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(1.35rem, 2.5vw, 1.8rem);
     background: linear-gradient(90deg, #65a8ff, #c05cff);
     -webkit-background-clip: text;
     background-clip: text;
@@ -2567,45 +2567,43 @@ body {
 
 
 .project-detail__stack .project-detail__technologies {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
 
 .project-detail__technology {
-    min-height: 108px;
+    min-width: 132px;
+    min-height: 76px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 12px 10px;
+    gap: 9px;
+    padding: 10px 14px;
     border: 1px solid #3a3a3a;
-    border-radius: 14px;
+    border-radius: 12px;
     background: #1d1d1d;
     transition: transform var(--transition-normal), border-color var(--transition-normal), background-color var(--transition-normal);
 }
 
 
 .project-detail__technology:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     border-color: var(--color-accent);
     background-color: #242124;
 }
 
 
-.project-detail__technology-mark {
-    display: grid;
-    place-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 9px;
-    background: linear-gradient(135deg, #3c8cf5, #7c5cff);
-    color: #ffffff;
-    font-size: 0.85rem;
-    font-weight: 800;
-    letter-spacing: 0;
+
+
+
+.project-detail__technology-mark img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 
@@ -2613,7 +2611,7 @@ body {
     padding: 0;
     border: 0;
     color: #e7e7e7;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-weight: 700;
     text-align: center;
 }
@@ -2683,10 +2681,6 @@ body {
 
 
 @media (max-width: 800px) {
-    .project-detail__stack .project-detail__technologies {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
     .project-detail__highlights {
         grid-template-columns: 1fr;
         gap: 16px;
@@ -2696,8 +2690,8 @@ body {
 
 
 @media (max-width: 500px) {
-    .project-detail__stack .project-detail__technologies {
-        grid-template-columns: 1fr;
+    .project-detail__technology {
+        flex: 1 1 100%;
     }
 
     .project-detail__actions {
