@@ -63,7 +63,7 @@ const projects = [
             "https://github.com/devmattiel20/Luvee",
 
         demo:
-            "#"
+            "https://luvee-app.vercel.app/"
     },
 
 
@@ -89,10 +89,10 @@ const projects = [
         ],
 
         github:
-            "#",
+            "https://github.com/devmattiel20/Crediby",
 
         demo:
-            "#"
+            "https://crediby.vercel.app/"
     },
 
 
@@ -118,10 +118,10 @@ const projects = [
         ],
 
         github:
-            "#",
+            "https://github.com/devmattiel20/Wematt",
 
         demo:
-            "#"
+            "https://wematt-app.vercel.app/"
     }
 
 ];
