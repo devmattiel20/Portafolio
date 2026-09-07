@@ -1459,15 +1459,6 @@ body {
 
 /* Filtros */
 
-.projects-filters {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    margin-bottom: 60px;
-    flex-wrap: wrap;
-    animation: fadeInUp 0.6s ease-out;
-}
-
 
 .filter-btn {
     background-color: var(--color-surface);

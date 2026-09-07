@@ -12,7 +12,7 @@ const projects = [
     {
         id: 1,
 
-        title: "Proyecto 1",
+        title: "MattSports",
 
         image:
             "/images/MattSports.png",
@@ -41,7 +41,7 @@ const projects = [
     {
         id: 2,
 
-        title: "Proyecto 2",
+        title: "Luvee",
 
         image:
             "/images/Luveeu.png",
@@ -72,7 +72,7 @@ const projects = [
     {
         id: 3,
 
-        title: "Proyecto 3",
+        title: "Crediby",
 
         image:
             "/images/Crediby.png",
@@ -101,7 +101,7 @@ const projects = [
     {
         id: 4,
 
-        title: "Proyecto 4",
+        title: "Wematt",
 
         image:
             "/images/Wematt.png",

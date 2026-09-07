@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Información para el navegador -->
-    <title>Projects | Mattiel</title>
+    <title>Proyectos</title>
     <link rel="icon" type="image/svg+xml" href="/images/Logo.png" />
 
     <!-- Estilos globales -->
@@ -23,21 +23,18 @@
          ========================================= -->
 
     <header class="navbar">
-      <!-- Logo -->
       <a href="/" class="navbar__logo">
-        <span>MATTIEL</span>
+        <span class="footer__title">Matthew Bettin</span>
       </a>
 
-      <!-- Navegación -->
       <nav class="navbar__menu">
-        <a href="/" class="navbar__link"> Home </a>
+        <a href="/" class="navbar__link"> Inicio </a>
+        <a href="/aboutme/" class="navbar__link"> Sobre mí </a>
+        <a href="/projects/" class="navbar__link"> Proyectos </a>
 
-        <a href="/projects/" class="navbar__link"> Projects </a>
-
-        <a href="/aboutme/" class="navbar__link"> About Me </a>
+       
       </nav>
     </header>
-
     <!-- =========================================
          PROJECTS
          ========================================= -->
@@ -49,13 +46,13 @@
       
       <div class="projects-hero__container">
         <div class="projects-hero__content">
-          <p class="projects-hero__label">Portfolio</p>
+          <p class="projects-hero__label">Portafolio</p>
           
           <h1 class="projects-hero__title">Mis Proyectos</h1>
           
           <p class="projects-hero__description">
             Una colección de proyectos que he construido mientras desarrollo mis 
-            habilidades como Developer. Cada proyecto representa un paso en mi 
+            habilidades como Desarrollador Frontend. Cada proyecto representa un paso en mi 
             aprendizaje y crecimiento profesional.
           </p>
         </div>
@@ -69,31 +66,17 @@
       <section class="projects-section">
         <div class="projects-container">
           <!-- Filtros -->
-          <div class="projects-filters">
-            <button class="filter-btn filter-btn--active" data-filter="all">Todos</button>
-            <button class="filter-btn" data-filter="frontend">Frontend</button>
-            <button class="filter-btn" data-filter="fullstack">Fullstack</button>
-            <button class="filter-btn" data-filter="other">Otros</button>
-          </div>
+    
 
           <!-- Grid de proyectos -->
-          <div class="projects-grid">
+          <div class="projects-list">
             <!-- JavaScript insertará aquí las tarjetas -->
           </div>
         </div>
       </section>
     </main>
 
-   
-
     <script type="module" src="/src/js/main.js"></script>
-    <script type="module" src="/src/js/projects.js"></script>
-        <div class="projects-list">
-          <!-- JavaScript insertará aquí las tarjetas -->
-        </div>
-
-
-
 
      <!-- =========================================
      TECNOLOGÍAS
@@ -210,62 +193,79 @@
             </div>
           </div>
         </section>
-      </main>
-    </main> F
-
-
          <!-- =========================================
          FOOTER
          ========================================= -->
-    <footer class="footer">
+        <footer class="footer">
       <div class="footer__container">
-        <!-- Columna 1: Info principal -->
+        <!-- Columna 1: Información personal -->
         <div class="footer__column">
-          <h2 class="footer__title">MATTIEL</h2>
+          <h3 class="footer__title">Matthew Bettin</h3>
           <p class="footer__description">
-            Desarrollador Frontend apasionado por crear experiencias web modernas 
-            y funcionales.
+            Desarrollador Frontend apasionado por crear interfaces web modernas y funcionales. 
           </p>
           <div class="footer__social">
             <a href="#" class="footer__social-link">LinkedIn</a>
             <a href="#" class="footer__social-link">GitHub</a>
-            <a href="#" class="footer__social-link">Twitter</a>
           </div>
         </div>
 
-        <!-- Columna 2: Links -->
+        <!-- Columna 2: Contacto -->
         <div class="footer__column">
-          <h3 class="footer__heading">Contacto</h3>
+          <h4 class="footer__heading">Contacto</h4>
           <ul class="footer__links">
-            <li><a href="mailto:contacto@mattiel.com" class="footer__link">Email</a></li>
-            <li><a href="tel:+1234567890" class="footer__link">Teléfono</a></li>
-            <li><a href="#" class="footer__link">Ubicación</a></li>
-            <li><a href="#" class="footer__link">Contacto</a></li>
+            <li>
+              <a href="mailto:email@ejemplo.com" class="footer__link">
+                📧 @devmatthew18@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+1234567890" class="footer__link">
+                📱 +57 302 2577710
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" >
+                📍 Colombia
+              </a>
+            </li>
+
           </ul>
         </div>
 
         <!-- Columna 3: Servicios -->
         <div class="footer__column">
-          <h3 class="footer__heading">Servicios</h3>
+          <h4 class="footer__heading">Servicios</h4>
           <ul class="footer__links">
-            <li><a href="#" class="footer__link">React Dev</a></li>
-            <li><a href="#" class="footer__link">UI/UX Design</a></li>
-            <li><a href="#" class="footer__link">Responsive Design</a></li>
-            <li><a href="#" class="footer__link">Optimización</a></li>
+            <li>
+              <a class="footer__link">
+                ⚛️ Desarrollo web y mantenimiento.
+              </a>
+            </li>
+            <li>
+              <a class="footer__link">
+                ⚡ Desarrollo de software.
+              </a>
+            </li>
+            <li>
+              <a  class="footer__link">
+                🎨 Desarrollo Frontend
+              </a>
+            </li>
+            </li>
           </ul>
         </div>
       </div>
 
+      <!-- Línea divisora -->
       <div class="footer__divider"></div>
 
+      <!-- Copyright -->
       <div class="footer__bottom">
         <p class="footer__copyright">
-          © 2025 Mattiel. Todos los derechos reservados.
+          &copy; 2026 Matthew Bettin | Desarrollador Frontend.
         </p>
       </div>
     </footer>
-      </section>
-    </main>
-    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

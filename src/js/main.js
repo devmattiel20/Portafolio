@@ -60,11 +60,6 @@ if (projectsList) {
                 </h2>
 
 
-                <p class="project-item__description">
-                    ${project.description}
-                </p>
-
-
                 <span class="project-item__link">
                     Ver proyecto →
                 </span>
